@@ -82,8 +82,8 @@ const homeTmpl = `
     }
   </style>
 </head>
-{{ $rootProjects := .Projects }} 
-{{ $rootGroups := .Groups }} 
+{{ $rootProjects := .Projects }}
+{{ $rootGroups := .Groups }}
 <body>
   <div class="group">
     <div class="group-title"></div>
