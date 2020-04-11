@@ -136,13 +136,16 @@ const homeTmpl = `
           {{ $project := index $rootProjects $projectName }}
           {{ range $container := $project }}
           <tr class="green">
-            {{ if not (eq $container.Link "") }}
-              <td><a href="//{{ $container.Link }}" target="_blank">{{ $container.Name }}</a></td>
-            {{ else }}
-              <td>{{ $container.Name }}</td>
-            {{ end }}
-            <td>{{ $container.Status }}</td>
-          </tr>
+             {{ if not (eq $container.Link "") }}
+               <td>{{ $container.Name }}</a></td>
+               <td><a href="//{{ $container.Link }}" target="_blank">{{ $container.Link }}</a></td>
+             {{ else }}
+               <td>{{ $container.Name }}</td>
+               <td>&nbsp;</td>
+             {{ end }}
+             <td>{{ $container.Status }}</td>
+           </tr>
+
           {{ end }}
         </table>
       </div>
