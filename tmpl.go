@@ -17,7 +17,7 @@ const homeTmpl = `
       --group-header-width: 18px;
       --group-header-colour: #ddd;
       --section-radius: 4px;
-      --colour-main: #FCF5B5;
+      --colour-main: #44475A;
     }
     * {
       margin: 0;
@@ -27,12 +27,20 @@ const homeTmpl = `
       margin: 0 auto;
       max-width: 500px;
       font-family: monospace;
+      background-color: #282A36;
     }
     a {
       color: unset;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     p {
       font-style: italic;
+    }
+    td,div {
+      border-radius: 5px;
     }
     .right {
       text-align: right;
