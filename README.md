@@ -26,7 +26,3 @@ services:
     - /proc:/host_proc:ro
     - ./data:/data
 ```
-
-### screenshot
-
-![](https://i.imgur.com/RTd0MiI.png)
