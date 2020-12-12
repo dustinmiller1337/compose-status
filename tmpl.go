@@ -36,6 +36,9 @@ const homeTmpl = `
     a:hover {
       text-decoration: underline;
     }
+    td {
+        padding-right: 1em;
+    }
     p {
       font-style: italic;
     }
@@ -86,7 +89,7 @@ const homeTmpl = `
       flex-wrap: wrap;
     }
     .project~.project {
-      border-top: 1px solid white;
+      border: 1px solid white;
     }
   </style>
 </head>
